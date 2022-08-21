@@ -98,15 +98,7 @@ float alpha = 0.9;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	/* "black", */
-	/* "red3", */
-	/* "green3", */
-	/* "yellow3", */
-	/* "blue2", */
-	/* "magenta3", */
-	/* "cyan3", */
-	/* "gray90", */
+    /* Nord */
     	"#3b4252", /* black   */
 	"#bf616a", /* red     */
 	"#a3be8c", /* green   */
@@ -116,15 +108,6 @@ static const char *colorname[] = {
 	"#88c0d0", /* cyan    */
 	"#e5e9f0", /* white   */
 
-	/* 8 bright colors */
-	/* "gray50", */
-	/* "red", */
-	/* "green", */
-	/* "yellow", */
-	/* "#5c5cff", */
-	/* "magenta", */
-	/* "cyan", */
-	/* "white", */
     	"#4c566a", /* black   */
 	"#bf616a", /* red     */
 	"#a3be8c", /* green   */
@@ -136,13 +119,39 @@ static const char *colorname[] = {
 
 	[255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	/* "#cccccc", */
-	/* "#555555", */
-	/* "gray90", /1* default foreground colour *1/ */
-	/* "black", /1* default background colour *1/ */
      "#d8dee9", /* default foreground colour */
 	"#2e3440", /* default background colour */
+    /* Nord */
+
+    /* Moonfly */
+
+	/* [0] = "#323437", */
+	/* [1] = "#ff5454", */
+	/* [2] = "#8cc85f", */
+	/* [3] = "#e3c78a", */
+	/* [4] = "#80a0ff", */
+	/* [5] = "#d183e8", */
+	/* [6] = "#79dac8", */
+	/* [7] = "#a1aab8", */
+
+	/* /1* 8 bright colors *1/ */
+
+	/* [8] = "#7c8f8f", */
+	/* [9] = "#ff5189", */
+	/* [10] = "#36c692", */
+	/* [11] = "#bfbf97", */
+	/* [12] = "#74b2ff", */
+	/* [13] = "#ae81ff", */
+	/* [14] = "#85dc85", */
+	/* [15] = "#e2637f", */
+ 
+ 	/* [255] = 0, */
+ 
+ 	/* more colors can be added after 255 to use with DefaultXX */
+  /* [256] = "#282a36", */ 
+  /* [257] = "#f8f8f2", */
+  /* [258] = "#080808", */
+  /* [259]= "#eeeeee", */
 };
 
 
@@ -150,12 +159,19 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-/* unsigned int defaultfg = 258; */
-/* unsigned int defaultbg = 259; */
+/* Nord */
 unsigned int defaultfg = 256;
 unsigned int defaultbg = 257;
 unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
+/* Nord */
+
+/* Moonfly */
+/* unsigned int defaultfg = 259; */
+/* unsigned int defaultbg = 258; */
+/* unsigned int defaultcs = 256; */
+/* static unsigned int defaultrcs = 257; */
+/* Moonfly */
 
 /*
  * Default shape of cursor
